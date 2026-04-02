@@ -207,13 +207,6 @@ const Products = () => {
                     <p className="text-gray-400 text-xl leading-relaxed mb-10 max-w-md font-light italic">
                       " {p.description} "
                     </p>
-                    
-                    <button className="group flex items-center space-x-4 text-turmeric font-semibold tracking-widest uppercase hover:text-cream transition-colors duration-300">
-                      <span>Explore Collection</span>
-                      <div className="w-10 h-10 rounded-full border border-turmeric/50 flex items-center justify-center group-hover:bg-turmeric group-hover:border-turmeric transition-all duration-300 transform group-hover:translate-x-2">
-                        <span className="group-hover:text-primary">→</span>
-                      </div>
-                    </button>
                   </motion.div>
                 </div>
               </div>

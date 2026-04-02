@@ -14,7 +14,7 @@ const ContactBar = () => {
               <FaPhoneAlt size={18} />
             </div>
             <h4 className="text-gray-400 text-[10px] font-bold tracking-[0.2em] uppercase mb-1">Talk to us</h4>
-            <p className="text-cream text-sm font-medium tracking-wide">+91 9876543210</p>
+            <p className="text-cream text-sm font-medium tracking-wide">+91 9270984360</p>
           </div>
 
           <div className="flex flex-col items-center sm:items-start p-3 hover:-translate-y-1 transition-transform duration-300">

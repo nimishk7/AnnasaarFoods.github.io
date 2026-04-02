@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-scroll';
-import heroSpices from '../assets/hero_spices.png';
+import heroSpices from '../assets/hero image.jpeg';
 
 const Hero = () => {
   const { scrollY } = useScroll();

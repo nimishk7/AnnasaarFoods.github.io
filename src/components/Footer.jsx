@@ -39,7 +39,7 @@ const Footer = () => {
             <h3 className="text-lg font-heading font-semibold text-cream mb-4">Contact Info</h3>
             <ul className="space-y-3 text-sm text-gray-400">
               <li><span className="text-turmeric mr-2 font-medium italic">Sangli / Pune</span></li>
-              <li><span className="text-cream mr-2">Email:</span> hello@annasaar.com</li>
+              <li><span className="text-cream mr-2">Email:</span> Annsaar2025@gmail.com</li>
             </ul>
           </div>
 
@@ -53,7 +53,7 @@ const Footer = () => {
               <a href="https://www.facebook.com/annasaar_foods/" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-cream hover:bg-turmeric hover:text-primary transition-all duration-300">
                 <FaFacebookF size={18} />
               </a>
-              <a href="https://wa.me/919270984360" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-cream hover:bg-turmeric hover:text-primary transition-all duration-300">
+              <a href="https://wa.me/c/919270984360" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-cream hover:bg-turmeric hover:text-primary transition-all duration-300">
                 <FaWhatsapp size={18} />
               </a>
             </div>
