@@ -50,17 +50,18 @@ const ContactBar = () => {
           
           <h3 className="text-primary font-heading font-bold text-base mb-3 relative z-10 tracking-tight">Connect With Us</h3>
           
-          <div className="flex space-x-4 relative z-10">
+          <div className="flex space-x-4 relative z-10" target='_blank' >
             {[ 
-              { icon: <FaInstagram size={18} />, href: "https://www.instagram.com/annasaar_foods/" },
-              { icon: <FaFacebookF size={18} />, href: "https://www.facebook.com/annasaar_foods/" },
-              { icon: <FaWhatsapp size={20} />, href: "https://wa.me/c/919270984360" }
+              { icon: <FaInstagram size={18} />, href: "https://www.instagram.com/annasaar_foods/", target: "_blank" },
+              { icon: <FaFacebookF size={18} />, href: "https://www.facebook.com/annasaar_foods/", target: "_blank" },
+              { icon: <FaWhatsapp size={20} />, href: "https://wa.me/c/919270984360", target: "_blank" }
             ].map((social, i) => (
               <motion.a 
                 key={i}
                 whileHover={{ scale: 1.15, y: -2 }}
                 whileTap={{ scale: 0.9 }}
                 href={social.href} 
+                target={social.target}
                 className="w-10 h-10 bg-primary text-turmeric rounded-xl flex items-center justify-center hover:bg-black transition-colors shadow-lg"
               >
                 {social.icon}

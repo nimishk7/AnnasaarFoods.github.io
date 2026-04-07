@@ -48,14 +48,14 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-heading font-semibold text-cream mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="https://www.instagram.com/annasaar_foods/" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-cream hover:bg-turmeric hover:text-primary transition-all duration-300">
-                <FaInstagram size={18} />
+              <a href="https://www.instagram.com/annasaar_foods/" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-cream hover:bg-turmeric hover:text-primary transition-all duration-300" target='_blank'>
+                <FaInstagram size={18} target='_blank'/>
               </a>
-              <a href="https://www.facebook.com/annasaar_foods/" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-cream hover:bg-turmeric hover:text-primary transition-all duration-300">
-                <FaFacebookF size={18} />
+              <a href="https://www.facebook.com/annasaar_foods/" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-cream hover:bg-turmeric hover:text-primary transition-all duration-300" target='_blank'>
+                <FaFacebookF size={18} target='_blank'/>
               </a>
-              <a href="https://wa.me/c/919270984360" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-cream hover:bg-turmeric hover:text-primary transition-all duration-300">
-                <FaWhatsapp size={18} />
+              <a href="https://wa.me/c/919270984360" className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-cream hover:bg-turmeric hover:text-primary transition-all duration-300" target='_blank'>
+                <FaWhatsapp size={18} target='_blank'/>
               </a>
             </div>
           </div>
