@@ -57,12 +57,12 @@ const Products = () => {
   });
 
   // Desktop transformations
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-66.66%"]);
+  const x = useTransform(scrollYProgress, [0, 0.8], ["0%", "-200%"]);
   
   // Background color interpolation for desktop
   const bgColor = useTransform(
     scrollYProgress,
-    [0, 0.4, 0.6, 1],
+    [0, 0.3, 0.7, 0.85],
     ["#0B0B0B", "#1A140B", "#1A140B", "#0B0B0B"]
   );
 
@@ -75,14 +75,14 @@ const Products = () => {
           <div className="absolute bottom-20 left-[-10%] w-64 h-64 rounded-full bg-earth blur-[100px]"></div>
         </div>
 
-        <div className="text-center mb-10 px-6 relative z-10">
+        <div className="text-center  px-6 relative z-10">
           <motion.h3 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-turmeric text-sm font-semibold tracking-[0.2em] uppercase mb-2 font-body"
           >
-            Signature Selections
+            Our Offerings
           </motion.h3>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -91,7 +91,7 @@ const Products = () => {
             transition={{ delay: 0.1 }}
             className="text-4xl font-heading font-bold text-cream mb-4"
           >
-            Authentic Spices
+            Signature Spices
           </motion.h2>
           <motion.div 
             initial={{ scaleX: 0 }}
@@ -141,20 +141,34 @@ const Products = () => {
 
   // Desktop horizontal scroll implementation
   return (
-    <section id="products" ref={targetRef} className="relative h-[300vh] bg-primary overflow-clip">
+    <section id="products" ref={targetRef} className="relative h-[400vh] bg-primary overflow-clip">
       <motion.div 
         style={{ backgroundColor: bgColor }}
-        className="sticky top-0 h-screen w-full flex items-center overflow-hidden transition-colors duration-700"
+        className="sticky top-0 h-screen w-full flex flex-col overflow-hidden transition-colors duration-700"
       >
-        {/* Section Title - Fixed overlay */}
-        <div className="absolute top-12 p-2 left-12 z-20 mix-blend-difference">
-          <h3 className="text-turmeric text-sm font-semibold tracking-[0.3em] uppercase mb-2 font-body">Our Offerings</h3>
-          <h2 className="text-6xl font-heading font-bold text-cream">Signature Spices</h2>
+        {/* Section Title - Flex Header */}
+        <div className="w-full pt-10 pb-6 text-center relative z-20">
+          <motion.h3 
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-turmeric text-sm font-semibold tracking-[0.3em] uppercase mb-2 font-body"
+          >
+            Our Offerings
+          </motion.h3>
+          <motion.h2 
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="text-5xl lg:text-7xl font-heading font-bold text-cream"
+          >
+            Signature Spices
+          </motion.h2>
+          <div className="w-24 h-[2px] bg-turmeric mx-auto mt-4 rounded-full opacity-50"></div>
         </div>
 
-        <motion.div style={{ x }} className="flex">
+        <motion.div style={{ x }} className="flex flex-1 items-center">
           {products.map((p) => (
-            <div key={p.id} className="w-screen h-screen flex-shrink-0 flex items-center justify-center relative px-24">
+            <div key={p.id} className="w-screen h-full flex-shrink-0 flex items-center justify-center relative px-24">
               
               {/* Product Background Number */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03] select-none">
@@ -169,7 +183,7 @@ const Products = () => {
                   <motion.div 
                     whileHover={{ scale: 1.02, rotateY: 5, rotateX: -5 }}
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="relative w-full max-w-lg aspect-[4/5] rounded-[2.5rem] overflow-hidden glass shadow-[0_40px_100px_rgba(0,0,0,0.5)] border border-white/5"
+                    className="relative w-full max-w-md aspect-[4/5] rounded-[2.5rem] overflow-hidden glass shadow-[0_40px_100px_rgba(0,0,0,0.5)] border border-white/5"
                   >
                     <div className="absolute inset-0 bg-gradient-to-tr from-primary/40 via-transparent to-white/10 z-10"></div>
                     <img 
