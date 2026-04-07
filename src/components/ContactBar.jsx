@@ -7,30 +7,39 @@ const ContactBar = () => {
       <div className="max-w-[1100px] w-full glass rounded-3xl md:rounded-[2.5rem] flex flex-col md:flex-row overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-white/10">
         
         {/* Left Side (Informational) */}
-        <div className="w-full md:w-[65%] grid grid-cols-1 sm:grid-cols-3 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-white/5 p-4 md:p-6">
+        <div className="w-full md:w-[65%] grid grid-cols-1 sm:grid-cols-3 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-white/5 p-4 sm:p-4 md:p-6">
           
-          <div className="flex flex-col items-center sm:items-start p-3 hover:-translate-y-1 transition-transform duration-300">
-            <div className="text-turmeric mb-2 opacity-80">
+          {/* Item 1 */}
+          <div className="flex flex-row sm:flex-col items-center sm:items-start py-4 sm:py-0 sm:p-3 gap-4 sm:gap-0 hover:-translate-y-1 transition-transform duration-300 justify-center sm:justify-start">
+            <div className="text-turmeric mb-0 sm:mb-2 opacity-80 flex-shrink-0">
               <FaPhoneAlt size={18} />
             </div>
-            <h4 className="text-gray-400 text-[10px] font-bold tracking-[0.2em] uppercase mb-1">Talk to us</h4>
-            <p className="text-cream text-sm font-medium tracking-wide">+91 9270984360</p>
+            <div className="flex flex-col items-start sm:items-start">
+              <h4 className="text-gray-400 text-[10px] font-bold tracking-[0.2em] uppercase mb-[2px] sm:mb-1">Talk to us</h4>
+              <p className="text-cream text-sm font-medium tracking-wide">+91 9270984360</p>
+            </div>
           </div>
 
-          <div className="flex flex-col items-center sm:items-start p-3 hover:-translate-y-1 transition-transform duration-300">
-            <div className="text-turmeric mb-2 opacity-80">
+          {/* Item 2 */}
+          <div className="flex flex-row sm:flex-col items-center sm:items-start py-4 sm:py-0 sm:p-3 gap-4 sm:gap-0 hover:-translate-y-1 transition-transform duration-300 justify-center sm:justify-start">
+            <div className="text-turmeric mb-0 sm:mb-2 opacity-80 flex-shrink-0">
               <FaMapMarkerAlt size={18} />
             </div>
-            <h4 className="text-gray-400 text-[10px] font-bold tracking-[0.2em] uppercase mb-1">Our Farm</h4>
-            <p className="text-cream text-sm font-medium tracking-wide italic">Sangli, MH</p>
+            <div className="flex flex-col items-start sm:items-start">
+              <h4 className="text-gray-400 text-[10px] font-bold tracking-[0.2em] uppercase mb-[2px] sm:mb-1">Our Farm</h4>
+              <p className="text-cream text-sm font-medium tracking-wide italic">Sangli, MH</p>
+            </div>
           </div>
 
-          <div className="flex flex-col items-center sm:items-start p-3 hover:-translate-y-1 transition-transform duration-300">
-            <div className="text-turmeric mb-2 opacity-80">
+          {/* Item 3 */}
+          <div className="flex flex-row sm:flex-col items-center sm:items-start py-4 sm:py-0 sm:p-3 gap-4 sm:gap-0 hover:-translate-y-1 transition-transform duration-300 justify-center sm:justify-start">
+            <div className="text-turmeric mb-0 sm:mb-2 opacity-80 flex-shrink-0">
               <FaRegClock size={18} />
             </div>
-            <h4 className="text-gray-400 text-[10px] font-bold tracking-[0.2em] uppercase mb-1">Timing</h4>
-            <p className="text-cream text-sm font-medium tracking-wide">10 AM - 8 PM</p>
+            <div className="flex flex-col items-start sm:items-start">
+              <h4 className="text-gray-400 text-[10px] font-bold tracking-[0.2em] uppercase mb-[2px] sm:mb-1">Timing</h4>
+              <p className="text-cream text-sm font-medium tracking-wide">10 AM - 8 PM</p>
+            </div>
           </div>
 
         </div>

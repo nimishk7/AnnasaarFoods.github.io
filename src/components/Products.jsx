@@ -102,7 +102,7 @@ const Products = () => {
           ></motion.div>
         </div>
 
-        <div className="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar px-6 pb-12 space-x-6 relative z-10">
+        <div className="flex overflow-x-auto mt-10 snap-x snap-mandatory hide-scrollbar px-6 pb-12 space-x-6 relative z-10">
           {products.map((p) => (
             <div 
               key={p.id} 

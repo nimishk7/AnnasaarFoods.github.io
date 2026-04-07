@@ -1,5 +1,6 @@
 import { Link } from 'react-scroll';
 import { FaInstagram, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   return (
@@ -8,8 +9,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12">
           
           {/* Column 1: Logo & Description */}
-          <div>
-            <h2 className="text-3xl font-heading font-bold text-turmeric mb-6">AnnaSaar</h2>
+          <div className='flex flex-wrap justify-center'>
+            <img src={logo} alt="AnnaSaar Logo" className="h-20 w-auto" />
             <p className="text-gray-400 text-base leading-relaxed max-w-xs">
               Where every product comes with a story, a feeling, and the warmth of home.
             </p>

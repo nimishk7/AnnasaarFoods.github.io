@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-primary/95 backdrop-blur-md shadow-lg py-2' : 'bg-transparent py-4'
+        isScrolled ? 'bg-primary/95 backdrop-blur-md shadow-lg py-1 md:py-2' : 'bg-transparent py-2 md:py-4'
       }`}
     >
       <div className="container mx-auto px-6 lg:px-12 flex flex-col justify-center items-center relative">
@@ -62,41 +62,48 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Logo (Desktop) */}
-        <Link 
-          to="home" 
-          smooth={true} 
-          duration={500}
-          hashSpy={false}
-          className="hidden md:block cursor-pointer transition-all duration-300"
-        >
-          <img 
-            src={logo} 
-            alt="AnnaSaar Logo" 
-            className={`object-contain rounded-full transition-all duration-300 ${isScrolled ? 'h-10' : 'h-12 lg:h-16'}`} 
-          />
-        </Link>
-
         {/* Desktop Menu - With Top and Bottom Borders */}
-        <div className={`hidden md:flex space-x-12 w-full justify-center transition-all duration-300 ${isScrolled ? 'border-y border-gray-700/50 py-2' : 'border-y border-cream/20 py-3'}`}>
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.to}
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              hashSpy={false}
-              activeClass="text-turmeric"
-              className="relative group text-cream font-medium text-sm tracking-wider uppercase transition-colors hover:text-turmeric cursor-pointer"
-            >
-              {link.name}
-              <motion.span
-                className="absolute left-0 -bottom-1.5 w-0 h-0.5 bg-turmeric transition-all duration-300 group-hover:w-full"
-              ></motion.span>
-            </Link>
-          ))}
+        <div className={`hidden md:flex flex-row items-center justify-between w-full transition-all duration-300 ${isScrolled ? 'border-y border-gray-700/50 py-2' : 'border-y border-cream/20 py-2 md:py-3'}`}>
+          
+          {/* Logo and Name (Left) */}
+          <Link 
+            to="home" 
+            smooth={true} 
+            duration={500}
+            hashSpy={false}
+            className="flex items-center space-x-3 cursor-pointer group"
+          >
+            <img 
+              src={logo} 
+              alt="AnnaSaar Logo" 
+              className={`object-contain rounded-full transition-all duration-300 ${isScrolled ? 'h-8 md:h-10' : 'h-10 md:h-12'}`} 
+            />
+            <span className={`font-heading font-bold text-cream tracking-wide transition-all duration-300 ${isScrolled ? 'text-xl' : 'text-3xl'}`}>
+              AnnaSaar
+            </span>
+          </Link>
+
+          {/* Navigation Links (Right) */}
+          <div className="flex space-x-8 lg:space-x-12 items-center">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.to}
+                spy={true}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                hashSpy={false}
+                activeClass="text-turmeric"
+                className="relative group text-cream font-medium text-sm tracking-wider uppercase transition-colors hover:text-turmeric cursor-pointer"
+              >
+                {link.name}
+                <motion.span
+                  className="absolute left-0 -bottom-1.5 w-0 h-0.5 bg-turmeric transition-all duration-300 group-hover:w-full"
+                ></motion.span>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
 

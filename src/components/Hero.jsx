@@ -8,7 +8,7 @@ const Hero = () => {
   const rotate = useTransform(scrollY, [0, 500], [0, 5]);
 
   return (
-    <section id="home" className="relative min-h-screen w-full flex items-center bg-primary overflow-hidden pt-32 lg:pt-40">
+    <section id="home" className="relative min-h-screen w-full flex items-center bg-primary overflow-hidden pt-28 pb-32 lg:pt-32 lg:pb-28 xl:pt-40 xl:pb-28">
       
       {/* Background Subtle Elements */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-turmeric/[0.03] to-transparent pointer-events-none" />
@@ -22,7 +22,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col space-y-8"
+            className="flex flex-col space-y-6 md:space-y-8 relative z-20"
           >
             <div>
               <motion.div 
@@ -40,24 +40,24 @@ const Hero = () => {
                 Purity from Sangli
               </motion.span>
               
-              <h1 className="text-3xl md:text-5xl lg:text-5xl font-heading font-bold text-cream leading-[1.2] tracking-tight mb-8">
+              <h1 className="text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-heading font-bold text-cream leading-[1.1] tracking-tight mb-6 xl:mb-8">
                 Authentic spices <br />
                 with a <span className="italic text-turmeric/90">legacy</span> of soil.
               </h1>
               
-              <p className="text-gray-40/80 text-base md:text-lg max-w-md leading-relaxed font-body font-light text-gray-400">
+              <p className="text-cream/80 text-base lg:text-sm xl:text-lg max-w-md leading-relaxed font-body font-light">
                 Honest, farm-to-kitchen flavors. No artificial colors, no preservatives—just the pure essence of our family farm in every pinch.
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-6 pt-4">
+            <div className="flex flex-wrap gap-4 pt-4">
               <motion.div whileHover={{ y: -5 }}>
                 <Link 
                   to="products" 
                   smooth={true} 
                   duration={800} 
                   offset={-80}
-                  className="bg-turmeric text-primary font-heading font-bold px-8 py-4 rounded-full hover:bg-cream transition-all shadow-lg cursor-pointer block text-sm tracking-widest uppercase"
+                  className="bg-turmeric text-primary font-heading font-bold px-6 py-3 md:px-8 md:py-4 rounded-full hover:bg-cream transition-all shadow-lg cursor-pointer block text-xs md:text-sm tracking-widest uppercase"
                 >
                   Explore Collection
                 </Link>
@@ -69,7 +69,7 @@ const Hero = () => {
                   smooth={true} 
                   duration={800} 
                   offset={-80}
-                  className="border border-white/10 text-cream font-heading font-bold px-8 py-4 rounded-full hover:bg-white/5 transition-all cursor-pointer block text-sm tracking-widest uppercase"
+                  className="border border-white/10 text-cream font-heading font-bold px-6 py-3 md:px-8 md:py-4 rounded-full hover:bg-white/5 transition-all cursor-pointer block text-xs md:text-sm tracking-widest uppercase"
                 >
                   Our Story
                 </Link>
@@ -94,11 +94,10 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9, x: 30 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-            className="relative perspective-1000"
+            className="relative perspective-1000 z-10 mt-8 lg:mt-0"
           >
             <motion.div 
-              style={{ y, rotate }}
-              className="relative aspect-[4/5] lg:aspect-square w-full max-w-2xl mx-auto rounded-3xl overflow-hidden glass shadow-[0_40px_100px_rgba(0,0,0,0.4)] border border-white/5"
+              className="relative aspect-square sm:aspect-[4/5] lg:aspect-square w-full max-w-[280px] sm:max-w-[340px] lg:max-w-md xl:max-w-lg mx-auto rounded-3xl overflow-hidden glass shadow-[0_40px_100px_rgba(0,0,0,0.4)] border border-white/5"
             >
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/40 via-transparent to-white/5 z-10" />
               <img 
