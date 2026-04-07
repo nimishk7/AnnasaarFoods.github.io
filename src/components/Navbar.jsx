@@ -42,6 +42,7 @@ const Navbar = () => {
             to="home" 
             smooth={true} 
             duration={500}
+            hashSpy={false}
             className="cursor-pointer"
           >
             <img src={logo} alt="AnnaSaar Logo" className="h-12 w-auto object-contain rounded-full" />
@@ -66,6 +67,7 @@ const Navbar = () => {
           to="home" 
           smooth={true} 
           duration={500}
+          hashSpy={false}
           className="hidden md:block cursor-pointer transition-all duration-300"
         >
           <img 
@@ -85,6 +87,7 @@ const Navbar = () => {
               smooth={true}
               offset={-80}
               duration={500}
+              hashSpy={false}
               activeClass="text-turmeric"
               className="relative group text-cream font-medium text-sm tracking-wider uppercase transition-colors hover:text-turmeric cursor-pointer"
             >
@@ -115,6 +118,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-80}
                 duration={500}
+                hashSpy={false}
                 activeClass="text-turmeric"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="text-cream text-lg font-medium hover:text-turmeric cursor-pointer border-b border-gray-800 pb-2"
