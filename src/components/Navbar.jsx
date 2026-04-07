@@ -71,12 +71,12 @@ const Navbar = () => {
           <img 
             src={logo} 
             alt="AnnaSaar Logo" 
-            className={`object-contain rounded-full transition-all duration-300 ${isScrolled ? 'h-10' : 'h-16 lg:h-20'}`} 
+            className={`object-contain rounded-full transition-all duration-300 ${isScrolled ? 'h-10' : 'h-12 lg:h-16'}`} 
           />
         </Link>
 
         {/* Desktop Menu - With Top and Bottom Borders */}
-        <div className={`hidden md:flex space-x-12 w-full justify-center transition-all duration-300 ${isScrolled ? 'border-y border-gray-700/50 py-2' : 'border-y border-cream/20 py-4'}`}>
+        <div className={`hidden md:flex space-x-12 w-full justify-center transition-all duration-300 ${isScrolled ? 'border-y border-gray-700/50 py-2' : 'border-y border-cream/20 py-3'}`}>
           {navLinks.map((link) => (
             <Link
               key={link.name}

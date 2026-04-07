@@ -11,7 +11,7 @@ const AboutPreview = () => {
   ];
 
   return (
-    <section id="about" className="py-24 lg:py-32 px-6 lg:px-12 bg-primary relative overflow-hidden">
+    <section id="about" className="py-16 md:py-24 px-6 lg:px-12 bg-primary relative overflow-hidden">
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           

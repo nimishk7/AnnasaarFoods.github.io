@@ -8,7 +8,7 @@ const Hero = () => {
   const rotate = useTransform(scrollY, [0, 500], [0, 5]);
 
   return (
-    <section id="home" className="relative min-h-screen w-full flex items-center bg-primary overflow-hidden pt-20 lg:pt-0">
+    <section id="home" className="relative min-h-screen w-full flex items-center bg-primary overflow-hidden pt-32 lg:pt-40">
       
       {/* Background Subtle Elements */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-turmeric/[0.03] to-transparent pointer-events-none" />
@@ -40,7 +40,7 @@ const Hero = () => {
                 Purity from Sangli
               </motion.span>
               
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-cream leading-[1.2] tracking-tight mb-8">
+              <h1 className="text-3xl md:text-5xl lg:text-5xl font-heading font-bold text-cream leading-[1.2] tracking-tight mb-8">
                 Authentic spices <br />
                 with a <span className="italic text-turmeric/90">legacy</span> of soil.
               </h1>
@@ -106,16 +106,6 @@ const Hero = () => {
                 alt="AnnaSaar Spices Collection"
                 className="w-full h-full object-cover scale-105"
               />
-            </motion.div>
-
-            {/* Decorative Floating Element */}
-            <motion.div 
-              animate={{ y: [0, -15, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-8 -left-8 glass p-6 rounded-2xl border border-white/10 hidden lg:block z-20"
-            >
-              <p className="text-turmeric text-xs font-bold tracking-[0.2em] uppercase mb-1">Traditional</p>
-              <p className="text-cream text-lg font-heading italic">"Farm to Kitchen"</p>
             </motion.div>
           </motion.div>
 

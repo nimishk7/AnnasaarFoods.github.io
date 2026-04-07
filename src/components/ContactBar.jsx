@@ -43,9 +43,9 @@ const ContactBar = () => {
           
           <div className="flex space-x-4 relative z-10">
             {[ 
-              { icon: <FaInstagram size={18} />, href: "#" },
-              { icon: <FaFacebookF size={18} />, href: "#" },
-              { icon: <FaWhatsapp size={20} />, href: "#" }
+              { icon: <FaInstagram size={18} />, href: "https://www.instagram.com/annasaar_foods/" },
+              { icon: <FaFacebookF size={18} />, href: "https://www.facebook.com/annasaar_foods/" },
+              { icon: <FaWhatsapp size={20} />, href: "https://wa.me/c/919270984360" }
             ].map((social, i) => (
               <motion.a 
                 key={i}

@@ -3,11 +3,11 @@ import ContactForm from './ContactForm';
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-24 px-6 lg:px-12 bg-primary relative overflow-hidden">
+    <section id="contact" className="py-16 md:py-24 px-6 lg:px-12 bg-primary relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-40 left-10 w-64 h-64 bg-turmeric/5 rounded-full blur-3xl mix-blend-screen pointer-events-none"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-darkgold/10 rounded-full blur-3xl mix-blend-screen pointer-events-none"></div>
-
+ 
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
@@ -20,7 +20,7 @@ const ContactSection = () => {
           >
             <div>
               <span className="text-turmeric text-sm font-semibold tracking-[0.2em] uppercase mb-4 block">Let's Connect 🤝</span>
-              <h2 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-cream mb-8 leading-tight">
+              <h2 className="text-4xl md:text-5xl lg:text-5xl font-heading font-bold text-cream mb-8 leading-tight">
                 We’d love to <span className="italic text-turmeric">hear</span> from you!
               </h2>
               <p className="text-gray-300 text-xl max-w-lg leading-relaxed font-light">

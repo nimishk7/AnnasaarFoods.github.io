@@ -2,7 +2,7 @@ import Hero from '../components/Hero';
 import ContactBar from '../components/ContactBar';
 import AboutPreview from '../components/AboutPreview';
 import Products from '../components/Products';
-import Testimonial from '../components/TestimonialsSection';
+import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       <ContactBar />
       <AboutPreview />
       <Products />
-      <Testimonial />
+      <TestimonialsSection />
       <ContactSection />
     </div>
   );

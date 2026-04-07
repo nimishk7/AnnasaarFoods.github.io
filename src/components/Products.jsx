@@ -124,9 +124,6 @@ const Products = () => {
                 <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">{p.description}</p>
                 <div className="flex justify-between items-center pt-6 border-t border-white/10">
                   <span className="text-turmeric font-bold text-lg">{p.price}</span>
-                  <div className="w-8 h-8 rounded-full border border-turmeric/30 flex items-center justify-center">
-                    <span className="text-turmeric text-sm">→</span>
-                  </div>
                 </div>
               </div>
             </div>
@@ -150,7 +147,7 @@ const Products = () => {
         className="sticky top-0 h-screen w-full flex items-center overflow-hidden transition-colors duration-700"
       >
         {/* Section Title - Fixed overlay */}
-        <div className="absolute top-12 left-12 z-20 mix-blend-difference">
+        <div className="absolute top-12 p-2 left-12 z-20 mix-blend-difference">
           <h3 className="text-turmeric text-sm font-semibold tracking-[0.3em] uppercase mb-2 font-body">Our Offerings</h3>
           <h2 className="text-6xl font-heading font-bold text-cream">Signature Spices</h2>
         </div>
@@ -199,7 +196,7 @@ const Products = () => {
                       <div className="w-12 h-[2px] bg-turmeric"></div>
                       <span className="text-turmeric/80 font-bold font-heading text-2xl">{p.index}</span>
                     </div>
-                    <h3 className="text-6xl lg:text-8xl font-heading font-extrabold text-cream mb-8 leading-[1.1]">
+                    <h3 className="text-4xl lg:text-5xl font-heading font-extrabold text-cream mb-8 leading-[1.1]">
                       {p.name.split(' ').map((word, i) => (
                         <span key={i} className="block">{word}</span>
                       ))}
